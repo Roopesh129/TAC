@@ -1,10 +1,21 @@
 body{
-background-image: url("8c3f539b-9664-4ca5-9eb2-40c8f2a8f52c.png");
-background-size: cover;
-color: rgb(255, 255, 0);
-display: flexbox;
+background: linear-gradient(45deg,#ff6b6b,#f7b7a3,#4facfe,#00f2fe,#f1c40f);
+background-size: 400% 400%;
+animation: gradientAnimation 10s ease infinite;
+height: 100vh;
+margin: 0;
 
-background-color: transparent;
+}
+@keyframes gradientAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 body img{
     width: 200px;
